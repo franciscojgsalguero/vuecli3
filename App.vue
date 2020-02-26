@@ -42,7 +42,7 @@
       <h1>Order List</h1>
       <ul>
         <li v-for="c in results" v-bind:key="c.id">
-          <h6>Order: {{c.order}}{{c.date}}</h6>
+          <h6>Order: {{c.id}} - Date: {{c.date}}</h6>
           <button>Edit</button>
           <button v-bind:id="c.id" v-on:click="removeorder(c.id)">Remove</button>
           <table>
@@ -54,10 +54,10 @@
               <th></th>
             </tr>
             <tr v-for="p in c.products" v-bind:key="p.id">
-              <td class="text-primary" >{{p.name}}</td>
-              <td>{{p.price}}</td>
-              <td>{{p.quantity}}</td>
-              <td>{{p.subtotal}}</td>
+              <td class="text-primary">{{p.name}}</td>
+              <td>{{p.price}} €</td>
+              <td>{{p.quantity}} uds.</td>
+              <td>{{p.price * p.quantity}} €</td>
             </tr>
           </table>
         </li>
