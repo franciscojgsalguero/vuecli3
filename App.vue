@@ -30,9 +30,9 @@
       </div>
 
       <div id="newProd">
-        <h5>Name:</h5>
+        <h4>Name:</h4>
         <input type="text" placeholder="Name" v-model="name" />
-        <h5>Price:</h5>
+        <h4>Price:</h4>
         <input type="number" min="1" placeholder="Price" v-model="price" />
         <button v-on:click="add">Add</button>
         <button v-on:click="removeLast">Delete the last row</button>
@@ -42,7 +42,7 @@
       <h1>Order List</h1>
       <ul>
         <li v-for="c in results" v-bind:key="c.id">
-          <h6>Order: {{c.id}} - Date: {{c.date}}</h6>
+          <h4>Order: {{c.id}} - Date: {{c.date}}</h4>
           <button>Edit</button>
           <button v-bind:id="c.id" v-on:click="removeorder(c.id)">Remove</button>
           <table>
