@@ -1,3 +1,5 @@
+No me ha dejado subir el projecto entero así que lo he metido en App.js
+
 # modelproject
 
 ## Project setup
@@ -22,3 +24,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
