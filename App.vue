@@ -172,4 +172,15 @@
     color: #2c3e50;
     margin-top: 60px;
   }
+
+  div#App{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  div#list {
+    grid-column: 1/2;
+  }
+  div#order_list {
+    grid-column: 2/3;
+  }
 </style>
