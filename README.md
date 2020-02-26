@@ -1,4 +1,4 @@
-No me ha dejado subir el projecto entero así que lo he metido en App.js
+No me ha dejado subir el projecto entero así que lo he metido en App.vue por si acaso
 
 # modelproject
 
